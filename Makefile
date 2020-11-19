@@ -110,6 +110,8 @@ RegistroDominio:
 	npm set registry https://npm.totvs.io
 	npm adduser --registry https://npm.totvs.io
 
+DescobrirOndeEstaComando:
+	which google-chrome
 
 OpenTutorials:
 	google-chrome -b https://ohmyz.sh/
