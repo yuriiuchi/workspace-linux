@@ -33,6 +33,7 @@ installUtils:
 	make InstallLombok
 	make InstallLightworks
 	make OpenTutorials
+	make InstallAtom
 	
 InstallCtop:
 	sudo wget https://github.com/bcicen/ctop/releases/download/v0.7.2/ctop-0.7.2-linux-amd64 -O /usr/local/bin/ctop
@@ -94,6 +95,10 @@ InstallLightworks:
 	wget https://cdn.lwks.com/lightworks-14.5.0-amd64.deb
 	sudo apt-get install -f
 	sudo dpkg -i lightworks-14.5.0-amd64.deb
+
+InstallAtom:
+	wget https://atom.io/download/deb
+	sudo dpkg -i atom-amd64.deb
 
 OpenTutorials:
 	google-chrome -b https://ohmyz.sh/
