@@ -1,8 +1,8 @@
 install:
 	make installUtils
-	ssh-keygen -t rsa -b 4096 -C "yuri.iuchi@totvs.com.br"
-	google-chrome -b https://totvstfs.visualstudio.com/_usersSettings/keys
-	cd wms-environment/portinari && make clone && mv SL-WMSPO SL-WMSPO-Learn
+	#ssh-keygen -t rsa -b 4096 -C "yuri.iuchi@totvs.com.br"
+	#google-chrome -b https://totvstfs.visualstudio.com/_usersSettings/keys
+	cd wms-environment/portinari && make clone
 	cd wms-environment/portinari && make clone
 	cd wms-environment/java/running && make GitCloneWms
 	cd wms-environment/java/dev-001 && make GitCloneWms
@@ -19,21 +19,21 @@ installUtils:
 	sudo apt-get install zsh -y
 	sudo apt-get install krdc -y
 	make InstallCtop
-	make InstallSdkMan
-	make InstallGit
 	make InstallVsCode
 	make InstallSpring
-	make InstallDocker
 	make InstallAndroidStudio
 	sudo apt-get install nodejs -y
 	sudo apt-get install npm 
-	nvm install 12.13.1
+	#nvm install 12.13.1
 	sudo apt-get install remmina -y
-	sudo apt-get install remmina remmina-plugin-* libfreerdp-plugins-standard -y
+	#sudo apt-get install remmina remmina-plugin-* libfreerdp-plugins-standard -y
 	make InstallLombok
 	make InstallLightworks
 	make OpenTutorials
 	make InstallAtom
+	#make InstallSdkMan
+	#make InstallGit
+	#make InstallDocker
 	
 InstallCtop:
 	sudo wget https://github.com/bcicen/ctop/releases/download/v0.7.2/ctop-0.7.2-linux-amd64 -O /usr/local/bin/ctop
@@ -62,9 +62,9 @@ InstallSpring:
 	wget https://download.springsource.com/release/STS4/4.4.2.RELEASE/dist/e4.13/spring-tool-suite-4-4.4.2.RELEASE-e4.13.0-linux.gtk.x86_64.tar.gz -O SpringTools.tar.gz
 	tar -vzxf SpringTools.tar.gz
 	cp -r sts-4.4.2.RELEASE ../spring-tools
-	sudo apt-get install snapd snapd-xdg-open
-	sudo snap install --classic vscode
-	sudo snap remove vscode
+	#sudo apt-get install snapd snapd-xdg-open
+	#sudo snap install --classic vscode
+	#sudo snap remove vscode
 
 InstallDocker:
 	sudo apt-get install apt-transport-https ca-certificates curl gnupg-agent software-properties-common -y
