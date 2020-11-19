@@ -1,12 +1,11 @@
 install:
-	make installUtils
+	#make installUtils
 	#ssh-keygen -t rsa -b 4096 -C "yuri.iuchi@totvs.com.br"
 	#google-chrome -b https://totvstfs.visualstudio.com/_usersSettings/keys
-	cd wms-environment/portinari && make clone
-	cd wms-environment/portinari && make clone
-	cd wms-environment/java/running && make GitCloneWms
-	cd wms-environment/java/dev-001 && make GitCloneWms
-	cd wms-environment/java/dev-002 && make GitCloneWms
+	#cd wms-environment/portinari && make clone
+	cd wms-environment/java/running && make GitCloneWmsSuite
+	cd wms-environment/java/dev-001 && make GitCloneWmsSuite
+	cd wms-environment/java/dev-002 && make GitCloneWmsSuite
 	cd wms-environment/mobile && make cloneMobile && mv SL-WMSMobile SL-WMSMobile-Learn
 	cd wms-environment/mobile && make cloneMobile
 	#rm -R .git
@@ -24,23 +23,26 @@ installUtils:
 	make InstallAndroidStudio
 	sudo apt-get install nodejs -y
 	sudo apt-get install npm 
+	make InstallSdkMan
+	sudo apt install maven
 	#nvm install 12.13.1
 	sudo apt-get install remmina -y
 	#sudo apt-get install remmina remmina-plugin-* libfreerdp-plugins-standard -y
 	make InstallLombok
-	make InstallLightworks
-	make OpenTutorials
-	make InstallAtom
-	#make InstallSdkMan
+	#make InstallLightworks
+	#make OpenTutorials
+	#make InstallAtom
 	#make InstallGit
 	#make InstallDocker
+#https://vpn3.totvs.com.br/public/download/linux_f5vpn.x86_64.deb
+	make RegistroDominio
 	
 InstallCtop:
 	sudo wget https://github.com/bcicen/ctop/releases/download/v0.7.2/ctop-0.7.2-linux-amd64 -O /usr/local/bin/ctop
 	sudo chmod +x /usr/local/bin/ctop
 
 InstallSdkMan:
-	curl -s "https://get.sdkman.io" | bash
+	sudo curl -s "https://get.sdkman.io" | bash
 	source "$$HOME/.sdkman/bin/sdkman-init.sh"
 	sdk version
 	sdk install java
@@ -100,9 +102,21 @@ InstallAtom:
 	wget https://atom.io/download/deb
 	sudo dpkg -i atom-amd64.deb
 
+InstallChrome:
+	wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+	sudo dpkg -i google-chrome-stable_current_amd64.deb
+
+RegistroDominio:
+	npm set registry https://npm.totvs.io
+	npm adduser --registry https://npm.totvs.io
+
+
 OpenTutorials:
 	google-chrome -b https://ohmyz.sh/
 	google-chrome -b https://github.com/bcicen/ctop
 	google-chrome -b https://sdkman.io/install
 	google-chrome -b https://github.com/nvm-sh/nvm
 	ggogle-chrome https://vpn3.totvs.com.br
+
+liberarPermissaoDiretorio:
+	sudo chown yuri -R instalador-ambiente/

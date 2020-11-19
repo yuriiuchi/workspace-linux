@@ -170,7 +170,7 @@ GitCloneWes:
 GitCloneComunicacao:
 	git clone totvstfs@vs-ssh.visualstudio.com:v3/totvstfs/SuiteLogistica/SL-ComunicacaoCore
 	git clone totvstfs@vs-ssh.visualstudio.com:v3/totvstfs/SuiteLogistica/SL-ComunicacaoReceiver
-	git clone totvstfs@vs-ssh.visualstudio.com:v3/totvstfs/SuiteLogistica/SL-ComunicacaoThf
+	#git clone totvstfs@vs-ssh.visualstudio.com:v3/totvstfs/SuiteLogistica/SL-ComunicacaoThf
 
 #GitCloneSL:
 #	git clone totvstfs@vs-ssh.visualstudio.com:v3/totvstfs/SuiteLogistica/SL-Front
