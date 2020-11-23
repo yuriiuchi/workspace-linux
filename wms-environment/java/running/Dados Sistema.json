@@ -1,0 +1,364 @@
+{
+  "cnpjs-livres": [
+    "50913815000130",
+    "14415181000121",
+    "87050768000158"
+    "58449036000137"
+    "18946846000184"
+  ],
+"inscricao-estadual-sc":[
+"883307600"
+"462604373"
+"673561950"
+"424154978"
+"748973958"
+]
+  "unidade": {
+    "nome": "Yuri Operador logístico",
+    "segmento": "Operador logístico",
+    "cnpj": "96999657000183",
+    "estado": "Santa Catarina",
+    "inscricaoEstadual": "251622770"
+  },
+  "unidadeSwagger": {
+  "cnpj": "96999657000183",
+  "inscricaoEstadual": "251622770",
+  "nome": "Yuri Operador logístico",
+  "segmento": "OPERADOR_LOGISTICO",
+  "unidadeFederativa": "SC"
+},
+
+  "config": {
+    "depositos": [
+      { "descricao": "Mini Armazém 001", "unidadeId": "9c4b4c63-ab43-4dac-98bb-5d1ac53fbc6a	" },
+      { "descricao": "Mini Armazém 002", "unidadeId": "9c4b4c63-ab43-4dac-98bb-5d1ac53fbc6a	" }
+    ],
+    "estruturaFisica": [
+      "Porta palete"
+    ],
+    "enderecos": [
+      {
+        "deposito": "Armazém 001",
+        "estruturaFisica":"Porta palete",
+        "capacidadeUnitizador": 8,
+        "prefixoRua": "A",
+        "ruaDe": 1,
+        "ruaAte": 1,
+        "colunaDe": 1,
+        "colunaAte": 4,
+        "andarDe": 1,
+        "andarAte": 3
+      },
+      {
+        "deposito": "Armazém 001",
+        "estruturaFisica":"Porta palete",
+        "capacidadeUnitizador": 8,
+        "prefixoRua": "B",
+        "ruaDe": 1,
+        "ruaAte": 2,
+        "colunaDe": 1,
+        "colunaAte": 4,
+        "andarDe": 1,
+        "andarAte": 3
+      },
+      {
+        "deposito": "Armazém 001",
+        "estruturaFisica":"Porta palete",
+        "capacidadeUnitizador": 8,
+        "prefixoRua": "C",
+        "ruaDe": 1,
+        "ruaAte": 1,
+        "colunaDe": 1,
+        "colunaAte": 4,
+        "andarDe": 1,
+        "andarAte": 3
+      }
+    ],
+
+    "despositantes" : [
+      {
+        "cnpj": "62752660000186",
+        "razaoSocial": "Werka mel e laticínios",
+        "estado":"Santa Catarina",
+        "inscricaoEstadual": "133809366"
+      },
+      {
+        "cnpj": "34616448000156",
+        "razaoSocial": "Aliexpress Produtos Chineses",
+        "estado":"Santa Catarina",
+        "inscricaoEstadual": "993353428"
+      },
+      {
+        "cnpj": "78233698000182",
+        "razaoSocial": "Distribuidora de bebidas Gaiger",
+        "estado":"Santa Catarina",
+        "inscricaoEstadual": "056081588"
+      },
+      {
+        "cnpj": "79417142000109",
+        "razaoSocial": "Ferrari Canecas e Camisetas Personalizadas",
+        "estado":"Santa Catarina",
+        "inscricaoEstadual": "693768070"
+      }
+    ],
+    "fornecedores": [
+      {
+        "cnpj": "62752660000186",
+        "razaoSocial": "Werka mel e laticínios",
+        "estado":"Santa Catarina",
+        "inscricaoEstadual": "133809366"
+      },
+      {
+        "cnpj": "17451067000145",
+        "razaoSocial": "Fabrica Chinesa de Placas Eletronicas",
+        "estado":"Santa Catarina",
+        "inscricaoEstadual": "664372694"
+      },
+      {
+        "cnpj": "11277256000167",
+        "razaoSocial": "Cervejaria Gaiger",
+        "estado":"Santa Catarina",
+        "inscricaoEstadual": "749094990"
+      },
+      {
+        "cnpj": "24640083000141",
+        "razaoSocial": "Ceramica Schmidt",
+        "estado":"Santa Catarina",
+        "inscricaoEstadual": "054852404"
+      },
+      {
+        "cnpj": "93113463000140",
+        "razaoSocial": "Atacadao das Malhas",
+        "estado":"Santa Catarina",
+        "inscricaoEstadual": "235648019"
+      }
+    ],
+    "produtos": [
+      {
+        "codigo": "0030000060032",
+        "depositante": "62.752.660/0001-86 - Werka mel e laticínios",
+        "unidadeMedida": "BALDE",
+        "descricaoComercial": "Mel Werka 500g",
+        "descricaInterna": "Mel Werka 500g",
+        "caracteristicas": [
+
+        ],
+        "skus": [
+          {
+            "descricao": "UNIDADE",
+            "quantidade": 1,
+            "codigoBarras": "620001"
+          },
+          {
+            "descricao": "CAIXA 10",
+            "quantidade": 10,
+            "codigoBarras": "620002"
+          }
+        ]
+      },
+      {
+        "codigo": "0030000060049",
+        "depositante": "62.752.660/0001-86 - Werka mel e laticínios",
+        "unidadeMedida": "BALDE",
+        "descricaoComercial": "Mel Werka 1kg",
+        "descricaInterna": "Mel Werka 1kg",
+        "caracteristicas": [
+
+        ],
+        "skus": [
+          {
+            "descricao": "UNIDADE",
+            "quantidade": 1
+          },
+          {
+            "descricao": "CAIXA 10",
+            "quantidade": 10
+          }
+        ]
+      },
+      {
+        "codigo": "0010000010015",
+        "depositante": "34616448000156 - Aliexpress Produtos Chineses",
+        "unidadeMedida": "UNID",
+        "descricaoComercial": "Raspberry PI 3 model B+",
+        "descricaInterna": "Raspberry PI 3 model B+",
+        "caracteristicas": [
+
+        ],
+        "skus": [
+          {
+            "descricao": "UNIDADE",
+            "quantidade": 1
+          }
+        ]
+      },
+      {
+        "codigo": "0030000010018",
+        "depositante": "78233698000182 - Distribuidora de bebidas Gaiger",
+        "unidadeMedida": "UNID",
+        "descricaoComercial": "Cerveja Gaiger Altbier 600ml",
+        "descricaInterna": "Cerveja Gaiger Altbier 600ml",
+        "caracteristicas": [
+
+        ],
+        "skus": [
+          {
+            "descricao": "UNIDADE",
+            "quantidade": 1
+          },
+          {
+            "descricao": "CAIXA 12",
+            "quantidade": 12
+          }
+        ]
+      },
+      {
+        "codigo": "0030000010020",
+        "depositante": "78233698000182 - Distribuidora de bebidas Gaiger",
+        "unidadeMedida": "UNID",
+        "descricaoComercial": "Cerveja Gaiger Special Bitter 600ml",
+        "descricaInterna": "Cerveja Gaiger Special Bitter 600ml",
+        "caracteristicas": [
+
+        ],
+        "skus": [
+          {
+            "descricao": "UNIDADE",
+            "quantidade": 1
+          },
+          {
+            "descricao": "CAIXA 12",
+            "quantidade": 12
+          }
+        ]
+      },
+      {
+        "codigo": "CAM0001",
+        "depositante": "79417142000109 - Ferrari Canecas e Camisetas Personalizadas",
+        "unidadeMedida": "UNID",
+        "descricaoComercial": "CAMISETA PERSONALIZADA M",
+        "descricaInterna": "CAMISETA PERSONALIZADA",
+        "caracteristicas": [
+
+        ],
+        "skus": [
+          {
+            "descricao": "UNIDADE",
+            "quantidade": 1
+          },
+          {
+            "descricao": "PACOTE 10",
+            "quantidade": 10
+          }
+        ]
+      },
+    ],
+    "transportadoras": [
+      {
+        "cnpj": "71967028000140",
+        "razaoSocial": "Correios do Brasil",
+        "estado":"Santa Catarina"
+      },
+      {
+        "cnpj": "23838430000182",
+        "razaoSocial": "Expresso Joinville - Entregas a Jato",
+        "estado":"Santa Catarina"
+      },
+      {
+          "cnpj": "38823433000110",
+          "razaoSocial": "Uber busca e entrega de mercadorias",
+          "estado":"Santa Catarina"
+      }
+    ],
+    "clientes": [
+      {"58522685000116", Angeloni Supermercados, SC "054204330"},
+      ,
+      "38985676000154", Brindes Joinville, "714660922",
+      "33586066000164", "Iuchi Informatica", "513019235"
+      ,
+      "42733905000110",
+      "88408388000105",
+      "57954635000145",
+      "49876739000150",
+      "04712341000140",
+      "38071479000120"
+    ],
+    "tiposEstoque": [
+
+    ]
+  },
+
+  "documentos":{
+    "documentosRecebimento": [
+      {
+        "depositante": "62.752.660/0001-86 - Werka mel e laticínios",
+        "fornecedor": "62.752.660/0001-86 - Werka mel e laticínios",
+        "transportadora": "23.838.430/0001-82 - Expresso Joinville - Entregas a Jato",
+        "numeroNF": 620001,
+        "serie": 1,
+        "data": "",
+        "itens": [
+          {
+           "sequencial": 1,
+           "produto": "0030000060032 - Mel Werka 500g",
+           "unidadeMedida": "BALDE",
+           "quantidade": 1000,
+           "valorUnitario": 8
+          },
+          {
+            "sequencial": 2,
+            "produto": "0030000060049 - Mel Werka 1kg",
+            "unidadeMedida": "BALDE",
+            "quantidade": 1000,
+            "valorUnitario": 15
+           }
+        ]
+      },
+      {
+        "depositante": "34616448000156 - Aliexpress Produtos Chineses",
+        "fornecedor": "Fabrica Chinesa de Placas Eletronicas",
+        "transportadora": "23.838.430/0001-82 - Expresso Joinville - Entregas a Jato",
+        "numeroNF": 340001,
+        "serie": 1,
+        "data": "",
+        "itens": [
+          {
+           "sequencial": 1,
+           "produto": "",
+           "unidadeMedida": "",
+           "quantidade": 1000,
+           "valorUnitario": 100
+          }
+        ]
+      },
+      {
+        "depositante": "78.233.698/0001-82 - Distribuidora de bebidas Gaiger",
+        "fornecedor": "11.277.256/0001-67 - Cervejaria Gaiger",
+        "transportadora": "23.838.430/0001-82 - Expresso Joinville - Entregas a Jato",
+        "numeroNF": 780001,
+        "serie": 1,
+        "data": "",
+        "itens": [
+          {
+           "sequencial": 1,
+           "produto": "0030000010018 - Cerveja Gaiger Altbier 600ml",
+           "unidadeMedida": "",
+           "quantidade": 1200,
+           "valorUnitario": 10
+          },
+          {
+            "sequencial": 2,
+            "produto": "0030000010020 - Cerveja Gaiger Special Bitter 600ml",
+            "unidadeMedida": "",
+            "quantidade": 1200,
+            "valorUnitario": 10
+          }
+        ]
+      }
+
+    ],
+    "documentosExpedicao": [
+	96.999.657/0001-83 - Yuri - Bebidas
+    ]
+  }
+}

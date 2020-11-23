@@ -36,6 +36,9 @@ installUtils:
 	#make InstallDocker
 #https://vpn3.totvs.com.br/public/download/linux_f5vpn.x86_64.deb
 	make RegistroDominio
+#sudo apt-get install postgresql-client-12
+#npm i -g cordova
+#npm install -g @ionic/cli
 	
 InstallCtop:
 	sudo wget https://github.com/bcicen/ctop/releases/download/v0.7.2/ctop-0.7.2-linux-amd64 -O /usr/local/bin/ctop
@@ -122,3 +125,6 @@ OpenTutorials:
 
 liberarPermissaoDiretorio:
 	sudo chown yuri -R instalador-ambiente/
+	
+backupSeguranca:
+	cp -vru * /media/yuri/YURI-01/Bakup-linux-seguranca
