@@ -29,10 +29,10 @@ SubirWms:
 	make UpServiceWms
 
 DockerStartWms: 
-	docker start b03520eeb6ee
-	docker start e2c4117d283f
-	docker start e5fdab3b33e7
-	docker start 1f5fa4896334
+	sudo docker start 4e7c9cd2d472
+	sudo docker start 1d6772edd402
+	sudo docker start 3b5195127a14
+	sudo docker start 4ea88e5dd1da
 
 PararWms:
 	kill $$(jps | grep RELEASE | awk '{print $$1}')

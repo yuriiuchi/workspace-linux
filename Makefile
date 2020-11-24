@@ -1,8 +1,8 @@
 install:
-	#make installUtils
-	#ssh-keygen -t rsa -b 4096 -C "yuri.iuchi@totvs.com.br"
-	#google-chrome -b https://totvstfs.visualstudio.com/_usersSettings/keys
-	#cd wms-environment/portinari && make clone
+	make installUtils
+	ssh-keygen -t rsa -b 4096 -C "yuri.iuchi@totvs.com.br"
+	google-chrome -b https://totvstfs.visualstudio.com/_usersSettings/keys
+	cd wms-environment/portinari && make clone
 	cd wms-environment/java/running && make GitCloneWmsSuite
 	cd wms-environment/java/dev-001 && make GitCloneWmsSuite
 	cd wms-environment/java/dev-002 && make GitCloneWmsSuite
@@ -34,11 +34,15 @@ installUtils:
 	#make InstallAtom
 	#make InstallGit
 	#make InstallDocker
-#https://vpn3.totvs.com.br/public/download/linux_f5vpn.x86_64.deb
+	#https://vpn3.totvs.com.br/public/download/linux_f5vpn.x86_64.deb
 	make RegistroDominio
-#sudo apt-get install postgresql-client-12
-#npm i -g cordova
-#npm install -g @ionic/cli
+	#sudo apt-get install postgresql-client-12
+	#npm i -g cordova
+	#npm install -g @ionic/cli
+	curl -sS https://download.spotify.com/debian/pubkey_0D811D58.gpg | sudo apt-key add - 
+	echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
+	sudo apt-get update && sudo apt-get install spotify-client
+	sudo apt-get install apache2 -y
 	
 InstallCtop:
 	sudo wget https://github.com/bcicen/ctop/releases/download/v0.7.2/ctop-0.7.2-linux-amd64 -O /usr/local/bin/ctop
@@ -127,4 +131,5 @@ liberarPermissaoDiretorio:
 	sudo chown yuri -R instalador-ambiente/
 	
 backupSeguranca:
+	cp -vru /var/www/* www
 	cp -vru * /media/yuri/YURI-01/Bakup-linux-seguranca
